@@ -1,10 +1,5 @@
 @charset "utf-8";
 
-@font-face {
-    font-family: "ChristianSundayItalic";
-    src: url("fonts/ChristianSundayItalic.otf");
-}
-
 /*============================== 
 	- Template Name: FOREVER - Responsive HTML Wedding Template
 	- Author: DoubleEight
@@ -205,7 +200,7 @@
 /* 01. GENERAL			 						 */
 /*===============================================*/
 body{
-	font-family: 'Courier New';	
+	font-family: 'Arvo', serif;	
 	color:#6a6a6a;
 	font-size:15px;
 }
@@ -267,7 +262,7 @@ h4.inline, h5.inline, h6.inline{
 }
 
 p{
-	font-family: 'Courier New';	
+	font-family: 'Arvo', serif;	
 	font-size:15px;
 	line-height:26px;
 	margin-bottom:25px;
@@ -362,7 +357,6 @@ img.with-border{
 	height:145px; 
 	width:100%;
 	background-color:#FFF;
-	/*background-color: #E6CBF8;*/
 	z-index:1500;
 	/*-webkit-transform: translateZ(0);*/
 }
@@ -482,7 +476,7 @@ img.with-border{
 }
 
 #nav-menu > li:before{
-  	font-family: "Courier New";
+  	font-family: "fontello";
   	font-style: normal;
   	font-weight: normal;
   	font-size:10px;
@@ -803,7 +797,7 @@ img.with-border{
 }
 
 #side-nav-menu > li > a:before{
-  	font-family: "Courier New";
+  	font-family: "fontello";
   	font-style: normal;
   	font-weight: normal;
   	font-size:10px;
@@ -888,7 +882,7 @@ img.with-border{
 	background-color:#f0394d; 
 	color:#FFF; 
 	text-align:center; 
-	font-family: 'Courier New';
+	font-family: 'Arvo', serif;
 }
 
 .css-logo.rounded{
@@ -1063,7 +1057,7 @@ img.with-border{
 /* 06.5.6 Save The Date Title */
 /* ----------------------------------------------*/
 #save-the-date{
-	font-family: 'Christian Sunday'; 
+	font-family: 'Pacifico', cursive; 
 	-ms-transform: rotate(-10deg); /* IE 9 */
     -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
     transform: rotate(-10deg);
@@ -1631,7 +1625,7 @@ input[type=submit]:disabled, input[type=submit]:hover:disabled{
 
 .banner-text.withlove:before{
 	display:block;
-	font-family: "Courier New";
+	font-family: "fontello";
 	position:absolute;
 	font-size:22px;
 	color:#FFF;
@@ -1648,7 +1642,7 @@ input[type=submit]:disabled, input[type=submit]:hover:disabled{
 
 .banner-text.withlove:after{
 	display:block;
-	font-family: "Courier New";
+	font-family: "fontello";
 	position:absolute;
 	font-size:22px;
 	color:#f0394d;
@@ -2345,7 +2339,7 @@ form label{
 }
 
 .option-label{
-	font-family: 'Courier New';	
+	font-family: 'Arvo', serif;	
 	color:#6a6a6a;
 	font-size:13px;
 }
@@ -2358,7 +2352,7 @@ form .btn-primary
     padding: 12px 18px;
     margin: 0 15px 5px 15px; 
     border-radius: 0;
-	font-family: 'Courier New';	
+	font-family: 'Arvo', serif;	
 	color:#6a6a6a;
 	font-size:13px;
   	background-color: #FFF;
@@ -2392,19 +2386,19 @@ form .btn-primary.active,
 }
 
 .ajax-checkbox .btn.custom-option-icon:before{
-	font-family:"Courier New";
+	font-family:"fontello";
 	content:"\ecd4";
 	margin-right:7px;
 }
 
 .ajax-checkbox .btn.active-icon.custom-option-icon:before{
-	font-family:"Courier New";
+	font-family:"fontello";
 	content:"\ecd3";
 	margin-right:7px;
 }
 
 .ajax-radio .btn.custom-option-icon:before{
-	font-family:"Courier New";
+	font-family:"fontello";
 	content:"\e914";
 	margin-right:7px;
 	font-size:16px;
@@ -2412,7 +2406,7 @@ form .btn-primary.active,
 }
 
 .ajax-radio .btn.active-icon.custom-option-icon:before{
-	font-family:"Courier New";
+	font-family:"fontello";
 	content:"\e917";
 	margin-right:7px;
 	font-size:16px;
@@ -2486,7 +2480,7 @@ form .has-error .btn-primary{
 }
 
 .couple-name{
-	font-family: 'Christian Sunday'; 
+	font-family: 'Pacifico', cursive; 
 	font-size:41px; 
 	padding-top:100px;
 	color:#FFF; 
@@ -2508,7 +2502,7 @@ form .has-error .btn-primary{
 #counting-down{
 	text-align:center; 
 	color:#FFF; 
-	font-family: 'Christian Sunday';
+	font-family: 'Pacifico';
 	-ms-transform: rotate(-10deg); 
 	-webkit-transform: rotate(-10deg); 
 	transform: rotate(-10deg);
@@ -2585,7 +2579,7 @@ footer .image-divider.fixed-height{
 #thank-you{
 	text-align:center; 
 	color:#FFF; 
-	font-family: 'Christian Sunday';
+	font-family: 'Pacifico';
 	-ms-transform: rotate(-10deg); 
 	-webkit-transform: rotate(-10deg); 
 	transform: rotate(-10deg);
@@ -2671,7 +2665,7 @@ footer .image-divider.fixed-height{
 /* 14.1 Slider Section							 */
 /* ----------------------------------------------*/
 #invited{
-	font-family: 'Christian Sunday'; 
+	font-family: 'Pacifico', cursive; 
 	font-size:36px; 
 	margin-top:70px;
 }
@@ -2696,7 +2690,7 @@ footer .image-divider.fixed-height{
 }
 
 .his-her-name .last-name{
-	font-family: 'Christian Sunday'; 
+	font-family: 'Pacifico', cursive; 
 	font-size:24px; 
 	display:block; 
 	margin-top:0;
@@ -2842,7 +2836,7 @@ footer .image-divider.fixed-height{
 h2#dont-miss-it-title{
 	font-size:42px; 
 	margin-bottom:30px; 
-	font-family: 'Christian Sunday';
+	font-family: 'Pacifico', cursive;
 }
 
 .circle-countdown{
@@ -3712,7 +3706,7 @@ button.mfp-close, button.mfp-arrow {
 		#thank-you {
 			text-align: center;
 			color: #FFF;
-			font-family: 'Christian Sunday';
+			font-family: 'Pacifico';
 			-ms-transform: rotate(-10deg);
 			-webkit-transform: rotate(-10deg);
 			transform: rotate(-10deg);

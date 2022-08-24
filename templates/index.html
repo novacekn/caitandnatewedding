@@ -37,12 +37,6 @@
         
         <!-- Skin CSS -->
     	<link href="{% static 'css/skin/tahiti/tahiti.css' %}" rel="stylesheet" media="screen">
-        <!-- <link href="css/skin/light-teal/light-teal-reverse-navbar.css" rel="stylesheet" media="screen"> -->
-        <!-- <link href="css/skin/pattern/pattern-1.css" rel="stylesheet" media="screen"> -->
-        
-       
-        
-       
 	</head>
 
 	<body class="outside-bottom-bar-page">
@@ -91,7 +85,7 @@
                                     	<h1>WE ARE GETTING MARRIED</h1>
                                     </div>                                       
                                     <div id="banner-date">
-                                    	- AUGUST / 19TH / 2015 -
+                                    	- APRIL / 15TH / 2023 -
                                     </div>     
                                     
 								</div> 
@@ -135,10 +129,6 @@
                     			</div>
                        		</a>
                     
-                    		<!-- IMG LOGO 
-                    		<div class="img-logo">
-                    			<img src="images/slide1.jpg">
-                    		</div>-->
                 		</div>
                 		<!-- END of LOGO -->
                     
@@ -160,7 +150,7 @@
                             	<a href="#gallery-section">GALLERY</a>
                             </li>
                             <li class="first-child split-margin">
-                            	<a href="#more-events">EVENTS</a>
+                            	<a href="#more-events">THINGS TO DO</a>
                             </li>
                             <li>
                             	<a href="#groomsmen-section">GROOMSMEN</a>
@@ -200,7 +190,7 @@
                         	<div class="photo-item frame-border animation fadeInLeft">
                                 	
                              	<!--PHOTO-->
-                               	<img src="http://placehold.it/458x458" alt="" class="hover-animation image-zoom-in">
+                               	<img src="{% static 'images/Nate.jpeg' %}" alt="" class="hover-animation image-zoom-in">
                                             
                                	<!--PHOTO OVERLAY-->
                            		<div class="layer wh100 hidden-black-overlay hover-animation fade-in">
@@ -211,7 +201,7 @@
                                     <div class="alignment">
                                     	<div class="v-align center-middle">
                                            
-                                     		<a href="http://placehold.it/700x467" class="magnific-zoom">
+                                     		<a href="{% static 'images/Nate.jpeg' %}" class="magnific-zoom">
         										<div class="de-icon circle light medium-size inline">
             										<i class="de-icon-zoom-in"></i>
             									</div>
@@ -250,7 +240,7 @@
                         	<div class="photo-item frame-border animation fadeInRight">
                                 	
                              	<!--PHOTO-->
-                               	<img src="http://placehold.it/458x458" alt="" class="hover-animation image-zoom-in">
+                               	<img src="{% static 'images/Caitlin.jpeg' %}" alt="" class="hover-animation image-zoom-in">
                                             
                                	<!--PHOTO OVERLAY-->
                            		<div class="layer wh100 hidden-black-overlay hover-animation fade-in">
@@ -261,7 +251,7 @@
                                     <div class="alignment">
                                     	<div class="v-align center-middle">
                                            
-                                     		<a href="http://placehold.it/700x467" class="magnific-zoom">
+                                     		<a href="{% static 'images/Caitlin.jpeg' %}" class="magnific-zoom">
         										<div class="de-icon circle light medium-size inline">
             										<i class="de-icon-zoom-in"></i>
             									</div>
@@ -294,7 +284,7 @@
             
             <!-- PHOTO DIVIDER -->
             <section id="photo-divider">
-            	<div class="image-divider fixed-height" style="background-image:url(http://placehold.it/1920x1080); height:600px" data-stellar-background-ratio="0.3">
+            	<div class="image-divider fixed-height" style="background-image:url({% static 'images/placeholders/Placeholder1.jpg' %}); height:600px" data-stellar-background-ratio="0.3">
                 </div>
             </section>
             
@@ -315,11 +305,6 @@
                             		OUR <img src="{% static 'images/heart-icon.png' %}" alt=""> STORY
                             	</h2>
                             
-                            	<p>
-                            		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada ante quis pharetra. Nullam notn bibendum dolor. Ut vel turpis accumsan, efficitur dolor fermentum, tincidunt metus. Etiam ut ultrices nibh.  Etiam aliquam mauris non hendrerit faucibus. Proin pulvinar congue  ex, vitae 
-                            	</p>
-                            
-                            	
                           	</div>
                         </div>
                    </div> <!-- END of ROW-1 -->
@@ -333,7 +318,7 @@
                         	<div class="photo-item frame-border animation delay1 fadeInLeft">
                                 	
                              	<!--PHOTO-->
-                               	<img src="http://placehold.it/290x290" alt="" class="hover-animation image-zoom-in">
+                               	<img src="{% static 'images/our_story/OurStory1.jpeg' %}" alt="" class="hover-animation image-zoom-in">
                                             
                                	<!--PHOTO OVERLAY-->
                            		<div class="layer wh100 hidden-black-overlay hover-animation fade-in">
@@ -344,7 +329,7 @@
                                     <div class="alignment">
                                     	<div class="v-align center-middle">
                                            
-                                     		<a href="http://placehold.it/500x750" class="magnific-zoom" title="Our First Met">
+                                     		<a href="{% static 'images/our_story/OurStory1.jpeg' %}" class="magnific-zoom" title="Matched">
         										<div class="de-icon circle light medium-size inline">
             										<i class="de-icon-zoom-in"></i>
             									</div>
@@ -368,9 +353,9 @@
                         </div>
                         
                         <div class="col-sm-12 col-md-4 animation delay1 fadeInRight">
-                        	<h3>OUR FIRST MET</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada ante quis pharetra. Nullam notn bibendum dolor. Ut vel turpis accumsan, efficitur dolor fermentum, tincidunt metus. Etiam ut ultrices nibh.  Etiam aliquam mauris non hendrerit faucibus. Proin pulvinar congue  ex, vitae commodo. Phasellus condimentum, mi ut sodales gravida.</p>                            
-                        </div>    
+                        	<h3>MATCHED</h3>
+                            <p>Caitlin and Nathan first matched on Bumble on this date. The conversation started with "Quantum physics huh? Don't see that much."</p>
+                        </div>
                         
                         <div class="vertical-line">
                         </div>
@@ -385,7 +370,7 @@
                         	<div class="photo-item frame-border animation delay1 fadeInLeft">
                                 	
                              	<!--PHOTO-->
-                               	<img src="http://placehold.it/290x290" alt="" class="hover-animation image-zoom-in">
+                               	<img src="{% static 'images/our_story/OurStory2.jpeg' %}" alt="" class="hover-animation image-zoom-in">
                                             
                                	<!--PHOTO OVERLAY-->
                            		<div class="layer wh100 hidden-black-overlay hover-animation fade-in">
@@ -396,7 +381,7 @@
                                     <div class="alignment">
                                     	<div class="v-align center-middle">
                                            
-                                     		<a href="http://placehold.it/700x467" class="magnific-zoom" title="Our First Dating">
+                                     		<a href="{% static 'images/our_story/OurStory2.jpeg' %}" class="magnific-zoom" title="Our First Date">
         										<div class="de-icon circle light medium-size inline">
             										<i class="de-icon-zoom-in"></i>
             									</div>
@@ -420,9 +405,9 @@
                         </div>
                         
                         <div class="col-sm-12 col-md-4 col-md-pull-6 animation delay1 fadeInRight">
-                        	<h3>OUR FIRST DATING</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada ante quis pharetra. Nullam notn bibendum dolor. Ut vel turpis accumsan, efficitur dolor fermentum, tincidunt metus. Etiam ut ultrices nibh.  Etiam aliquam mauris non hendrerit faucibus. Proin pulvinar congue  ex, vitae commodo. Phasellus condimentum, mi ut sodales gravida.</p>                            
-                        </div>    
+                        	<h3>OUR FIRST DATE</h3>
+                            <p>Caitlin and Nathan had their first date on this date. They went to Tapped and had some pizza, a few beers, and a great time with good conversation.</p>
+                        </div>
                         
                         <div class="vertical-line">
                         </div>
@@ -437,7 +422,7 @@
                         	<div class="photo-item frame-border animation delay1 fadeInLeft">
                                 	
                              	<!--PHOTO-->
-                               	<img src="http://placehold.it/290x290" alt="" class="hover-animation image-zoom-in">
+                               	<img src="{% static 'images/our_story/OurStory4.jpeg' %}" alt="" class="hover-animation image-zoom-in">
                                             
                                	<!--PHOTO OVERLAY-->
                            		<div class="layer wh100 hidden-black-overlay hover-animation fade-in">
@@ -448,7 +433,7 @@
                                     <div class="alignment">
                                     	<div class="v-align center-middle">
                                            
-                                     		<a href="http://placehold.it/700x394" class="magnific-zoom" title="He Proposed">
+                                     		<a href="{% static 'images/our_story/OurStory4.jpeg' %}" class="magnific-zoom" title="Entered A Relationship">
         										<div class="de-icon circle light medium-size inline">
             										<i class="de-icon-zoom-in"></i>
             									</div>
@@ -472,9 +457,8 @@
                         </div>
                         
                         <div class="col-md-4 animation delay1 fadeInRight">
-                        	<h3>HE PROPOSED</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada ante quis pharetra. Nullam notn bibendum dolor. Ut vel turpis accumsan, efficitur dolor fermentum, tincidunt metus. Etiam ut ultrices nibh.  Etiam aliquam mauris non hendrerit faucibus. Proin pulvinar congue  ex, vitae commodo. Phasellus condimentum, mi ut sodales gravida.</p>
-                            
+                        	<h3>ENTERED A RELATIONSHIP</h3>
+                            <p>Nate asked Caitlin if she wanted to be his girlfriend on this date in her living room. She gladly said "YES!"</p>
                         </div>    
                         
                         <div class="vertical-line">
@@ -490,7 +474,7 @@
                         	<div class="photo-item frame-border animation delay1 fadeInLeft">
                                 	
                              	<!--PHOTO-->
-                               	<img src="http://placehold.it/290x290" alt="" class="hover-animation image-zoom-in">
+                               	<img src="{% static 'images/our_story/OurStory3.jpeg' %}" alt="" class="hover-animation image-zoom-in">
                                             
                                	<!--PHOTO OVERLAY-->
                            		<div class="layer wh100 hidden-black-overlay hover-animation fade-in">
@@ -501,7 +485,7 @@
                                     <div class="alignment">
                                     	<div class="v-align center-middle">
                                            
-                                     		<a href="http://placehold.it/700x467" class="magnific-zoom" title="Love Ring">
+                                     		<a href="{% static 'images/our_story/OurStory3.jpeg' %}" class="magnific-zoom" title="He Proposed">
         										<div class="de-icon circle light medium-size inline">
             										<i class="de-icon-zoom-in"></i>
             									</div>
@@ -517,17 +501,18 @@
                         <div class="col-sm-12 col-md-2 text-center story-date-wrapper animation fadeIn">
                         	<div class="arrow-left"></div>
                             <div class="story-date">
-                            	<div class="date-only">19</div>
-                                <div class="month-year">10.14</div>
+                            	<div class="date-only">04</div>
+                                <div class="month-year">06.22</div>
                            </div>
                            <div class="arrow-right"></div>
                            <div class="clearboth"></div>                          
                         </div>
                         
                         <div class="col-sm-12 col-md-4 col-md-pull-6 animation delay1 fadeInRight">
-                        	<h3>LOVE RING</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada ante quis pharetra. Nullam notn bibendum dolor. Ut vel turpis accumsan, efficitur dolor fermentum, tincidunt metus. Etiam ut ultrices nibh.  Etiam aliquam mauris non hendrerit faucibus. Proin pulvinar congue  ex, vitae commodo. Phasellus condimentum, mi ut sodales gravida.</p>                            
-                        </div>    
+                        	<h3>HE PROPOSED</h3>
+                            <p>On this date Nate walked Cait around the entire upper lake at Twin Lakes looking for the right spot to propose. He never found the right feeling spot so before they left the park
+                               Nate asked to sit on a bench by the start of the lake and talked to Cait. In the middle of the conversation Nate got down on one knee and said "So anyways, will you marry me?" Cait, in shock answered "YES!"</p>
+                        </div>
                         
                         <div class="vertical-line">
                         </div>
@@ -537,7 +522,7 @@
                     <div class="row">
                     	<div class="col-md-12 text-center">
                         	<div id="end-of-story" class="animation fadeInUp">
-                        		<h2>AND TODAY... WE ARE GETTING MARRIED</h2>
+                        		<h2>AND APRIL 15, 2023... WE ARE GETTING MARRIED</h2>
                                 <div class="heart-divider">
                                     	<span class="grey-line"></span>
                                         <i class="de-icon-heart pink-heart"></i>
@@ -554,7 +539,7 @@
             
             <!-- PHOTO DIVIDER -->
             <section id="photo-divider-1">
-            	<div class="image-divider fixed-height" style="background-image:url(http://placehold.it/1920x1080); height:500px" data-stellar-background-ratio="0.3">
+            	<div class="image-divider fixed-height" style="background-image:url({% static 'images/placeholders/Placeholder2.jpg' %}); height:500px" data-stellar-background-ratio="0.3">
                 </div>
             </section>     
             
@@ -592,15 +577,15 @@
                                   
                                   <div class="row">
                                 		<div class="col-md-4">
-                                        	<h3>AUGUST / 19TH / 2015</h3>
+                                        	<h3>APRIL / 15TH / 2023</h3>
                                         </div>
                                         <div class="col-md-4">
                                         	<div class="border-column">
-                                        		<h3>FIVE THIRTY IN THE EVENING</h3>
+                                        		<h3>TWO THIRTY IN THE EVENING</h3>
                                             </div>
                                         </div>
                                         <div class="col-md-4">
-                                        	<h3>ST. FOXEGAN CHURCH</h3>
+                                        	<h3>ST. PAUL'S CATHOLIC CHURCH</h3>
                                         </div>
                                   		
                                   </div>
@@ -649,7 +634,7 @@
             </section>
             
             <section id="attending">
-            	<div class="image-divider auto-height" style="background-image:url(http://placehold.it/1920x1080);" data-stellar-background-ratio="0.3">
+            	<div class="image-divider auto-height" style="background-image:url({% static 'images/placeholders/Placeholder3.jpg' %});" data-stellar-background-ratio="0.3">
                 	
                     <div class="divider-overlay"></div>
                     
@@ -698,7 +683,7 @@
                             	</h2>
                             
                             	<p>
-                            		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada ante quis pharetra. Nullam notn bibendum dolor. Ut vel turpis accumsan, efficitur dolor fermentum, tincidunt metus. Etiam ut ultrices nibh.  Etiam aliquam mauris non hendrerit faucibus. Proin pulvinar congue  ex, vitae 
+                                    Photos of Cait and Nate!
                             	</p>
                             
                             	
@@ -715,7 +700,7 @@
                         	<div class="photo-item frame-border animation fadeIn">
                                 	
                              	<!--PHOTO-->
-                               	<img src="http://placehold.it/290x290" alt="" class="hover-animation image-zoom-rotate">
+                               	<img src="{% static 'images/gallery/Gallery1.jpeg' %}" alt="" class="hover-animation image-zoom-rotate">
                                             
                                	<!--PHOTO OVERLAY-->
                            		<div class="layer wh100 hidden-black-overlay hover-animation fade-in">
@@ -726,7 +711,7 @@
                                     <div class="alignment">
                                     	<div class="v-align center-middle">
                                            
-                                     		<a href="http://placehold.it/500x750" class="magnific-zoom-gallery" title="Attachment-1">
+                                     		<a href="{% static 'images/gallery/Gallery1.jpeg' %}" class="magnific-zoom-gallery" title="Attachment-1">
         										<div class="de-icon circle light medium-size inline">
             										<i class="de-icon-zoom-in"></i>
             									</div>
@@ -745,7 +730,7 @@
                         	<div class="photo-item frame-border animation fadeIn">
                                 	
                              	<!--PHOTO-->
-                               	<img src="http://placehold.it/290x290" alt="" class="hover-animation image-zoom-rotate">
+                               	<img src="{% static 'images/gallery/Gallery2.jpg' %}" alt="" class="hover-animation image-zoom-rotate">
                                             
                                	<!--PHOTO OVERLAY-->
                            		<div class="layer wh100 hidden-black-overlay hover-animation fade-in">
@@ -756,7 +741,7 @@
                                     <div class="alignment">
                                     	<div class="v-align center-middle">
                                            
-                                     		<a href="http://placehold.it/700x394" class="magnific-zoom-gallery" title="Attachment-2">
+                                     		<a href="{% static 'images/gallery/Gallery2.jpg' %}" class="magnific-zoom-gallery" title="Attachment-2">
         										<div class="de-icon circle light medium-size inline">
             										<i class="de-icon-zoom-in"></i>
             									</div>
@@ -775,7 +760,7 @@
                         	<div class="photo-item frame-border animation fadeIn">
                                 	
                              	<!--PHOTO-->
-                               	<img src="http://placehold.it/290x290" alt="" class="hover-animation image-zoom-rotate">
+                               	<img src="{% static 'images/gallery/Gallery3.jpeg' %}" alt="" class="hover-animation image-zoom-rotate">
                                             
                                	<!--PHOTO OVERLAY-->
                            		<div class="layer wh100 hidden-black-overlay hover-animation fade-in">
@@ -786,7 +771,7 @@
                                     <div class="alignment">
                                     	<div class="v-align center-middle">
                                            
-                                     		<a href="http://placehold.it/700x467" class="magnific-zoom-gallery" title="Attachment-3">
+                                     		<a href="{% static 'images/gallery/Gallery3.jpeg' %}" class="magnific-zoom-gallery" title="Attachment-3">
         										<div class="de-icon circle light medium-size inline">
             										<i class="de-icon-zoom-in"></i>
             									</div>
@@ -805,7 +790,7 @@
                         	<div class="photo-item frame-border animation fadeIn">
                                 	
                              	<!--PHOTO-->
-                               	<img src="http://placehold.it/290x290" alt="" class="hover-animation image-zoom-rotate">
+                               	<img src="{% static 'images/gallery/Gallery4.jpeg' %}" alt="" class="hover-animation image-zoom-rotate">
                                             
                                	<!--PHOTO OVERLAY-->
                            		<div class="layer wh100 hidden-black-overlay hover-animation fade-in">
@@ -816,7 +801,7 @@
                                     <div class="alignment">
                                     	<div class="v-align center-middle">
                                            
-                                     		<a href="http://placehold.it/700x467" class="magnific-zoom-gallery" title="Attachment-4">
+                                     		<a href="{% static 'images/gallery/Gallery4.jpeg' %}" class="magnific-zoom-gallery" title="Attachment-4">
         										<div class="de-icon circle light medium-size inline">
             										<i class="de-icon-zoom-in"></i>
             									</div>
@@ -835,7 +820,7 @@
                         	<div class="photo-item frame-border animation fadeIn">
                                 	
                              	<!--PHOTO-->
-                               	<img src="http://placehold.it/290x290" alt="" class="hover-animation image-zoom-rotate">
+                               	<img src="{% static 'images/gallery/Gallery5.jpg' %}" alt="" class="hover-animation image-zoom-rotate">
                                             
                                	<!--PHOTO OVERLAY-->
                            		<div class="layer wh100 hidden-black-overlay hover-animation fade-in">
@@ -846,7 +831,7 @@
                                     <div class="alignment">
                                     	<div class="v-align center-middle">
                                            
-                                     		<a href="http://placehold.it/700x467" class="magnific-zoom-gallery" title="Attachment-5">
+                                     		<a href="{% static 'images/gallery/Gallery5.jpg' %}" class="magnific-zoom-gallery" title="Attachment-5">
         										<div class="de-icon circle light medium-size inline">
             										<i class="de-icon-zoom-in"></i>
             									</div>
@@ -865,7 +850,7 @@
                         	<div class="photo-item frame-border animation fadeIn">
                                 	
                              	<!--PHOTO-->
-                               	<img src="http://placehold.it/290x290" alt="" class="hover-animation image-zoom-rotate">
+                               	<img src="{% static 'images/gallery/Gallery6.jpeg' %}" alt="" class="hover-animation image-zoom-rotate">
                                             
                                	<!--PHOTO OVERLAY-->
                            		<div class="layer wh100 hidden-black-overlay hover-animation fade-in">
@@ -876,7 +861,7 @@
                                     <div class="alignment">
                                     	<div class="v-align center-middle">
                                            
-                                     		<a href="http://placehold.it/700x467" class="magnific-zoom-gallery" title="Attachment-6">
+                                     		<a href="{% static 'images/gallery/Gallery6.jpeg' %}" class="magnific-zoom-gallery" title="Attachment-6">
         										<div class="de-icon circle light medium-size inline">
             										<i class="de-icon-zoom-in"></i>
             									</div>
@@ -895,7 +880,7 @@
                         	<div class="photo-item frame-border animation fadeIn">
                                 	
                              	<!--PHOTO-->
-                               	<img src="http://placehold.it/290x290" alt="" class="hover-animation image-zoom-rotate">
+                               	<img src="{% static 'images/gallery/Gallery7.jpg' %}" alt="" class="hover-animation image-zoom-rotate">
                                             
                                	<!--PHOTO OVERLAY-->
                            		<div class="layer wh100 hidden-black-overlay hover-animation fade-in">
@@ -906,7 +891,7 @@
                                     <div class="alignment">
                                     	<div class="v-align center-middle">
                                            
-                                     		<a href="http://placehold.it/700x467" class="magnific-zoom-gallery" title="Attachment-7">
+                                     		<a href="{% static 'images/gallery/Gallery7.jpg' %}" class="magnific-zoom-gallery" title="Attachment-7">
         										<div class="de-icon circle light medium-size inline">
             										<i class="de-icon-zoom-in"></i>
             									</div>
@@ -925,7 +910,7 @@
                         	<div class="photo-item frame-border animation fadeIn">
                                 	
                              	<!--PHOTO-->
-                               	<img src="http://placehold.it/290x290" alt="" class="hover-animation image-zoom-rotate">
+                               	<img src="{% static 'images/gallery/Gallery8.jpg' %}" alt="" class="hover-animation image-zoom-rotate">
                                             
                                	<!--PHOTO OVERLAY-->
                            		<div class="layer wh100 hidden-black-overlay hover-animation fade-in">
@@ -936,7 +921,7 @@
                                     <div class="alignment">
                                     	<div class="v-align center-middle">
                                            
-                                     		<a href="http://placehold.it/700x467" class="magnific-zoom-gallery" title="Attachment-8">
+                                     		<a href="{% static 'images/gallery/Gallery8.jpg' %}" class="magnific-zoom-gallery" title="Attachment-8">
         										<div class="de-icon circle light medium-size inline">
             										<i class="de-icon-zoom-in"></i>
             									</div>
@@ -955,7 +940,7 @@
                         	<div class="photo-item frame-border animation fadeIn">
                                 	
                              	<!--PHOTO-->
-                               	<img src="http://placehold.it/290x290" alt="" class="hover-animation image-zoom-rotate">
+                               	<img src="{% static 'images/gallery/Gallery9.jpeg' %}" alt="" class="hover-animation image-zoom-rotate">
                                             
                                	<!--PHOTO OVERLAY-->
                            		<div class="layer wh100 hidden-black-overlay hover-animation fade-in">
@@ -966,7 +951,7 @@
                                     <div class="alignment">
                                     	<div class="v-align center-middle">
                                            
-                                     		<a href="http://placehold.it/700x467" class="magnific-zoom-gallery" title="Attachment-9">
+                                     		<a href="{% static 'images/gallery/Gallery9.jpeg' %}" class="magnific-zoom-gallery" title="Attachment-9">
         										<div class="de-icon circle light medium-size inline">
             										<i class="de-icon-zoom-in"></i>
             									</div>
@@ -985,7 +970,7 @@
             
             
             <section id="dont-miss-it">
-            	<div class="image-divider auto-height" style="background-image:url(http://placehold.it/1920x1080);" data-stellar-background-ratio="0.3">
+            	<div class="image-divider auto-height" style="background-image:url({% static 'images/placeholders/Placeholder4.jpg' %});" data-stellar-background-ratio="0.3">
                     
                     <div class="container">                 	 
                     	<div class="row">
@@ -1026,11 +1011,11 @@
                         
                         	<div class="section-title animation fadeInUp">
                         		<h2>
-                            		MORE <img src="{% static 'images/heart-icon.png' %}" alt=""> EVENTS
+                            		THINGS TO <img src="{% static 'images/heart-icon.png' %}" alt=""> DO
                             	</h2>
                             
                             	<p>
-                            		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada ante quis pharetra. Nullam notn bibendum dolor. Ut vel turpis accumsan, efficitur dolor fermentum, tincidunt metus. Etiam ut ultrices nibh.  Etiam aliquam mauris non hendrerit faucibus. Proin pulvinar congue  ex, vitae 
+                                    Here are some things to check out while you are in Greensburg!
                             	</p>
                             
                             	
@@ -1052,7 +1037,7 @@
                         			<div class="photo-item animation fadeIn">
                                 	
                              			<!--PHOTO-->
-                               			<img src="http://placehold.it/800x533" alt="" class="hover-animation image-zoom-in">
+                               			<img src="{% static 'images/things_to_do/LiveCasino.jpg' %}" alt="" class="hover-animation image-zoom-in">
                                             
                                			<!--PHOTO OVERLAY-->
                            				<div class="layer wh100 hidden-black-overlay hover-animation fade-in">
@@ -1063,7 +1048,7 @@
                                    			<div class="alignment">
                                     			<div class="v-align center-middle">
                                            
-                                     				<a href="http://placehold.it/800x533" class="magnific-zoom" title="event-1">
+                                     				<a href="{% static 'images/things_to_do/LiveCasino.jpg' %}" class="magnific-zoom" title="event-1">
         												<div class="de-icon circle light medium-size inline">
             												<i class="de-icon-zoom-in"></i>
             											</div>
@@ -1084,9 +1069,9 @@
                                     <!-- TITLE & EXCERPT -->
                         			<div class="title-excerpt animation fadeIn">
                         
-                        				<h3><a href="#">DANCING PARTY</a></h3>
-                          				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce urna urna, imperdiet et purus ut, ultricies sollicitudin arcu. Cras placerat, arcu non faucibus suscipit, ex arcu consectetur enim.</p>
-                            
+                        				<h3><a target="_blank" href="https://pittsburgh.livecasinohotel.com/">LIVE! CASINO PITTSBURGH</a></h3>
+                                        <p>5260 US-30, Greensburg, PA 15601</p>
+
                         			</div><!-- END of TITLE & EXCERPT -->
                             
                             	</div><!--END of ITEM-1-->  
@@ -1098,7 +1083,7 @@
                         			<div class="photo-item animation fadeIn">
                                 	
                              			<!--PHOTO-->
-                               			<img src="http://placehold.it/800x533" alt="" class="hover-animation image-zoom-in">
+                               			<img src="{% static 'images/things_to_do/MainStreetSweets.jpg' %}" alt="" class="hover-animation image-zoom-in">
                                             
                                			<!--PHOTO OVERLAY-->
                            				<div class="layer wh100 hidden-black-overlay hover-animation fade-in">
@@ -1109,7 +1094,7 @@
                                    			<div class="alignment">
                                     			<div class="v-align center-middle">
                                            
-                                     				<a href="http://placehold.it/800x533" class="magnific-zoom" title="event-2">
+                                     				<a href="{% static 'images/things_to_do/MainStreetSweets.jpg' %}" class="magnific-zoom" title="event-2">
         												<div class="de-icon circle light medium-size inline">
             												<i class="de-icon-zoom-in"></i>
             											</div>
@@ -1130,9 +1115,9 @@
                                     <!-- TITLE & EXCERPT -->
                         			<div class="title-excerpt animation fadeIn">
                         
-                        				<h3><a href="#">FLOWER AND FLOWER</a></h3>
-                          				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce urna urna, imperdiet et purus ut, ultricies sollicitudin arcu. Cras placerat, arcu non faucibus suscipit, ex arcu consectetur enim.</p>
-                            
+                        				<h3><a target="_blank" href="https://www.facebook.com/mainstreetsweetsgreensburg/">MAIN STREET SWEETS</a></h3>
+                                        <p>41 N Main St, Greensburg, PA 15601</p>
+
                         			</div><!-- END of TITLE & EXCERPT -->
                             
                             	</div><!--END of ITEM-2-->
@@ -1144,7 +1129,7 @@
                         			<div class="photo-item animation fadeIn">
                                 	
                              			<!--PHOTO-->
-                               			<img src="http://placehold.it/800x533" alt="" class="hover-animation image-zoom-in">
+                               			<img src="{% static 'images/things_to_do/SunDawgCafe.jpg' %}" alt="" class="hover-animation image-zoom-in">
                                             
                                			<!--PHOTO OVERLAY-->
                            				<div class="layer wh100 hidden-black-overlay hover-animation fade-in">
@@ -1155,7 +1140,7 @@
                                    			<div class="alignment">
                                     			<div class="v-align center-middle">
                                            
-                                     				<a href="http://placehold.it/800x533" class="magnific-zoom" title="event-3">
+                                     				<a href="{% static 'images/things_to_do/SunDawgCafe.jpg' %}" class="magnific-zoom" title="event-3">
         												<div class="de-icon circle light medium-size inline">
             												<i class="de-icon-zoom-in"></i>
             											</div>
@@ -1176,12 +1161,150 @@
                                     <!-- TITLE & EXCERPT -->
                         			<div class="title-excerpt animation fadeIn">
                         
-                        				<h3><a href="#">FOOD TRUCK DINNER</a></h3>
-                          				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce urna urna, imperdiet et purus ut, ultricies sollicitudin arcu. Cras placerat, arcu non faucibus suscipit, ex arcu consectetur enim.</p>
-                            
+                        				<h3><a target="_blank" href="http://www.sundawgcafe.com/">SUN DAWG CAFE</a></h3>
+                                        <p>37 N Main St, Greensburg, PA 15601</p>
+
                         			</div><!-- END of TITLE & EXCERPT -->
                             
-                            	</div><!--END of ITEM-3-->   
+                            	</div><!--END of ITEM-3-->
+
+                                                               <!-- ITEM-4 -->
+                    			<div class="item">
+
+                                    <!--PHOTO-ITEM-->
+                        			<div class="photo-item animation fadeIn">
+
+                             			<!--PHOTO-->
+                               			<img src="{% static 'images/things_to_do/TheWhiteRabbit.jpg' %}" alt="" class="hover-animation image-zoom-in">
+
+                               			<!--PHOTO OVERLAY-->
+                           				<div class="layer wh100 hidden-black-overlay hover-animation fade-in">
+                            			</div><!--END of PHOTO OVERLAY-->
+
+                                		<!--ICON LINK-->
+                                		<div class="layer wh100 hidden-link hover-animation delay1 fade-in">
+                                   			<div class="alignment">
+                                    			<div class="v-align center-middle">
+
+                                     				<a href="{% static 'images/things_to_do/TheWhiteRabbit.jpg' %}" class="magnific-zoom" title="event-3">
+        												<div class="de-icon circle light medium-size inline">
+            												<i class="de-icon-zoom-in"></i>
+            											</div>
+        											</a>
+
+                                            		<a href="#">
+        												<div class="de-icon circle light medium-size inline">
+            												<i class="de-icon-link"></i>
+            											</div>
+        											</a>
+
+                                      			</div>
+                                    		</div>
+                               			</div><!--END of ICON LINK-->
+
+                           			</div><!--END of PHOTO-ITEM-->
+
+                                    <!-- TITLE & EXCERPT -->
+                        			<div class="title-excerpt animation fadeIn">
+
+                        				<h3><a target="_blank" href="https://www.thewhiterabbitcafe.com/">THE WHITE RABBIT CAFE</a></h3>
+                                        <p>113 N Main St, Greensburg, PA 15601</p>
+
+                        			</div><!-- END of TITLE & EXCERPT -->
+
+                            	</div><!--END of ITEM-4-->
+
+                                                               <!-- ITEM-5 -->
+                    			<div class="item">
+
+                                    <!--PHOTO-ITEM-->
+                        			<div class="photo-item animation fadeIn">
+
+                             			<!--PHOTO-->
+                               			<img src="{% static 'images/things_to_do/TwinLakesPark.jpg' %}" alt="" class="hover-animation image-zoom-in">
+
+                               			<!--PHOTO OVERLAY-->
+                           				<div class="layer wh100 hidden-black-overlay hover-animation fade-in">
+                            			</div><!--END of PHOTO OVERLAY-->
+
+                                		<!--ICON LINK-->
+                                		<div class="layer wh100 hidden-link hover-animation delay1 fade-in">
+                                   			<div class="alignment">
+                                    			<div class="v-align center-middle">
+
+                                     				<a href="{% static 'images/things_to_do/TwinLakesPark.jpg' %}" class="magnific-zoom" title="event-3">
+        												<div class="de-icon circle light medium-size inline">
+            												<i class="de-icon-zoom-in"></i>
+            											</div>
+        											</a>
+
+                                            		<a href="#">
+        												<div class="de-icon circle light medium-size inline">
+            												<i class="de-icon-link"></i>
+            											</div>
+        											</a>
+
+                                      			</div>
+                                    		</div>
+                               			</div><!--END of ICON LINK-->
+
+                           			</div><!--END of PHOTO-ITEM-->
+
+                                    <!-- TITLE & EXCERPT -->
+                        			<div class="title-excerpt animation fadeIn">
+
+                        				<h3><a target="_blank" href="https://www.co.westmoreland.pa.us/737/Twin-Lakes-Park">TWIN LAKES PARK</a></h3>
+                                        <p>219 Twin Lakes Rd, Latrobe, PA 15650</p>
+
+                        			</div><!-- END of TITLE & EXCERPT -->
+
+                            	</div><!--END of ITEM-5-->
+
+                                                               <!-- ITEM-6 -->
+                    			<div class="item">
+
+                                    <!--PHOTO-ITEM-->
+                        			<div class="photo-item animation fadeIn">
+
+                             			<!--PHOTO-->
+                               			<img src="{% static 'images/things_to_do/WestmorelandMuseumOfAmericanArt.jpg' %}" alt="" class="hover-animation image-zoom-in">
+
+                               			<!--PHOTO OVERLAY-->
+                           				<div class="layer wh100 hidden-black-overlay hover-animation fade-in">
+                            			</div><!--END of PHOTO OVERLAY-->
+
+                                		<!--ICON LINK-->
+                                		<div class="layer wh100 hidden-link hover-animation delay1 fade-in">
+                                   			<div class="alignment">
+                                    			<div class="v-align center-middle">
+
+                                     				<a href="{% static 'images/things_to_do/WestmorelandMuseumOfAmericanArt.jpg' %}" class="magnific-zoom" title="event-3">
+        												<div class="de-icon circle light medium-size inline">
+            												<i class="de-icon-zoom-in"></i>
+            											</div>
+        											</a>
+
+                                            		<a href="#">
+        												<div class="de-icon circle light medium-size inline">
+            												<i class="de-icon-link"></i>
+            											</div>
+        											</a>
+
+                                      			</div>
+                                    		</div>
+                               			</div><!--END of ICON LINK-->
+
+                           			</div><!--END of PHOTO-ITEM-->
+
+                                    <!-- TITLE & EXCERPT -->
+                        			<div class="title-excerpt animation fadeIn">
+
+                        				<h3><a target="_blank" href="https://thewestmoreland.org/">WESTMORELAND MUSEUM OF AMERICAN ART</a></h3>
+                                        <p>221 N Main St, Greensburg, PA 15601</p>
+
+                        			</div><!-- END of TITLE & EXCERPT -->
+
+                            	</div><!--END of ITEM-6-->
                             
                         	</div><!--END of EVENTS CAROUSEL-->   
                         
@@ -1192,7 +1315,7 @@
             
             <!-- PHOTO DIVIDER -->
             <section id="photo-divider-2">
-            	<div class="image-divider fixed-height" style="background-image:url(http://placehold.it/1920x1080); height:450px" data-stellar-background-ratio="0.3">
+            	<div class="image-divider fixed-height" style="background-image:url({% static 'images/placeholders/Placeholder5.jpg' %}); height:450px" data-stellar-background-ratio="0.3">
                 </div>
             </section>
             
@@ -1513,7 +1636,7 @@
             
             <!-- PHOTO DIVIDER -->
             <section id="photo-divider-3">
-            	<div class="image-divider fixed-height" style="background-image:url(http://placehold.it/1920x1080); height:450px" data-stellar-background-ratio="0.3">
+            	<div class="image-divider fixed-height" style="background-image:url({% static 'images/placeholders/Placeholder6.jpg' %}); height:450px" data-stellar-background-ratio="0.3">
                 </div>
             </section>
             
@@ -1949,7 +2072,7 @@
         
         <!-- FOOTER SECTION -->
             <footer>
-            	<div class="image-divider fixed-height" style="background-image:url(http://placehold.it/1920x1080);" data-stellar-background-ratio="0.5" >
+            	<div class="image-divider fixed-height" style="background-image:url({% static 'images/placeholders/Placeholder7.jpg' %});" data-stellar-background-ratio="0.5" >
                 
                 	<div class="divider-overlay"></div>
                     
@@ -1976,7 +2099,7 @@
                         				</div>
                                     
 										<div id="footer-couple-name" class="animation delay1 fadeInUp">
-                                			GERRARD & DIANNE
+                                			NATHAN & CAITLIN
                                 		</div>
                      
                      				</div>
@@ -2027,7 +2150,7 @@
         <!-- Owl Carousel -->
         <script src="{% static 'js/owlcarousel/owl.carousel.js' %}"></script>
         <!-- Google Map -->
-        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcr4Tft4RHaI-0IUJnjrzEtDDIwOlUI_E&callback=initMap"></script>
         <script src="{% static 'js/markerlabel/markerwithlabel.js' %}"></script>
         <!-- RSVP -->
         <script src="{% static 'js/rsvp/rsvp.js' %}"></script>

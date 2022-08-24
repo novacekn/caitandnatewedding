@@ -1,10 +1,11 @@
-	<div id="popup-template">
+{% load static %}
+    <div id="popup-template">
     
     	<!--PHOTO-ITEM-->
        	<div class="photo-item">
                                 	
       		<!--PHOTO-->
-            <div id="main-image" class="autocrop-image" style="background-image:url(http://placehold.it/900x506)">
+            <div id="main-image" class="autocrop-image" style="background-image:url({% static 'images/Nate.jpeg' %})">
             </div>
                                             
         	<!--PHOTO OVERLAY-->
@@ -15,7 +16,7 @@
         	<div class="layer wh100 photo-caption">
              	
                 <div id="popup-template-title-wrapper">
-               		<h1 style="color:#FFF">GERRARD LEANDRO</h1>
+               		<h1 style="color:#FFF">NATHAN NOVACEK</h1>
                                 		
               		<div class="heart-divider">
                 		<span class="white-line"></span>

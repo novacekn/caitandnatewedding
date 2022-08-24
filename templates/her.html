@@ -1,10 +1,11 @@
-	<div id="popup-template">
+{% load static %}
+    <div id="popup-template">
     
     	<!--PHOTO-ITEM-->
        	<div class="photo-item">
                                 	
       		<!--PHOTO-->
-            <div id="main-image" class="autocrop-image" style="background-image:url(http://placehold.it/900x506)">
+            <div id="main-image" class="autocrop-image" style="background-image:url('{% static 'images/Caitlin.jpeg' %}')">
             </div>
             
         	<!--PHOTO OVERLAY-->
