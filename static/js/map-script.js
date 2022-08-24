@@ -16,7 +16,7 @@
   		var mapOptions = {
     		zoom: 18,		
 			mapTypeId: google.maps.MapTypeId.ROADMAP,	
-    		center: new google.maps.LatLng(40.29393423670459, -79.55910273796258),
+    		center: new google.maps.LatLng(40.292457983506594, -79.55855200728924),
 			panControl: true,
   			zoomControl: true,
   			mapTypeControl: true,
@@ -65,7 +65,7 @@
      		});
     
 		var marker2 = new MarkerWithLabel({
-       		position: new google.maps.LatLng(-12.046040, -77.029269),
+       		position: new google.maps.LatLng(40.293406046418944, -79.46903063071491),
        		draggable: false,
        		raiseOnDrag: false,
        		icon: ' ',
@@ -104,6 +104,10 @@
 		google.maps.event.addListener(marker1, 'click', function() {
   			infowindow.open(map,marker1);
   		});
+
+		google.maps.event.addListener(marker2, 'click', function () {
+			infowindow.open(map, marker2);
+		});
 
 		//ON MARKER CLICK EVENTS
 		//=======================================================================================
