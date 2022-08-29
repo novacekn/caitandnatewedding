@@ -7,6 +7,7 @@ TITLES = [
     ('Miss', 'Miss'),
     ('Dr.', 'Dr.'),
     ('Reverend Father', 'Reverend Father'),
+    ('Sister', 'Sister'),
 ]
 
 STATES = [
@@ -60,6 +61,7 @@ STATES = [
     ('WV', 'WV'),
     ('WI', 'WI'),
     ('WY', 'WY'),
+    ('ON', 'ON'),
 ]
 
 COUNTRIES = [('US', 'US'), ('CA', 'CA')]
@@ -75,7 +77,7 @@ class Household(models.Model):
     email = models.CharField(max_length=255, blank=True, null=True)
     phone_number = models.CharField(max_length=255, blank=True, null=True)
     number_of_guests = models.PositiveIntegerField()
-    rsvp_code = models.CharField(max_length=10)
+    rsvp_code = models.CharField(max_length=10, unique=True)
 
     def __repr__(self):
         return self.name
@@ -90,6 +92,7 @@ class Guest(models.Model):
     first_name = models.CharField(max_length=55)
     middle_initial = models.CharField(max_length=10, null=True, blank=True)
     last_name = models.CharField(max_length=55)
+    is_attending = models.BooleanField(null=True, blank=True)
 
     def __repr__(self):
         return self.title + ' ' + self.first_name + ' ' + self.last_name

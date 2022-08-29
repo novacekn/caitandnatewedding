@@ -1869,7 +1869,7 @@
                         		<div class="photo-item frame-border animation fadeIn">
                                 	
                              		<!--PHOTO-->
-                               		<img src="" alt="" class="hover-animation image-zoom-rotate">
+                               		<img src="{% static 'images/bridesmaids/Erin.jpeg' %}" alt="" class="hover-animation image-zoom-rotate">
                                             
                                		<!--PHOTO OVERLAY-->
                            			<div class="layer wh100 hidden-black-overlay hover-animation fade-in">
@@ -1880,7 +1880,7 @@
                                     	<div class="alignment">
                                     		<div class="v-align center-middle">
                                            
-                                     			<a href="" class="magnific-zoom">
+                                     			<a href="{% static 'images/bridesmaids/Erin.jpeg' %}" class="magnific-zoom">
         											<div class="de-icon circle light medium-size inline">
             											<i class="de-icon-zoom-in"></i>
             										</div>
@@ -1965,32 +1965,31 @@
                   <!-- FORM -->
                 <div class="row">
                 	<div id="message" class="col-md-12 message"> <!-- Show Message --> </div>
-                  
-                	<form method="post" action="rsvp.php" id="rsvpform">
+                    <form id="rsvpcodeform">
+                        {% csrf_token %}
                 		<div class="col-md-12">
-                        	<div id="fullname" class="form-group">
-    							<label for="inputname">*NAME</label>
-    							<input type="text" class="form-control ajax-input" id="inputname" placeholder="" data-required="Name Required" data-output-label="Output Name">
- 							</div>
-                            <div id="email" class="form-group">
-    							<label for="inputemail">*EMAIL</label>
-    							<input type="email" class="form-control ajax-input" id="inputemail" placeholder="" data-required="Email Required" data-output-label="Output Email">
- 							</div>
-                        	<div id="events" class="form-group">
-    							<label for="inputevents">*I WILL ATTEND TO</label>
-    							<select multiple id="inputevents" class="form-control ajax-input" data-required="Please Select Events" data-output-label="Output Events">
-  									<option>Ceremony Day</option>
-                                    <option>Reception</option>
-								</select>
+                        	<div id="rsvp-code" class="form-group">
+    							<label id="rsvp-code-label" for="rsvp-code">RSVP CODE</label>
+    							<input type="text" name="rsvpCode" class="form-control ajax-input" id="rsvp-code" placeholder="" data-required="RSVP CODE REQUIRED" autocomplete="off">
  							</div>
                     	</div>
+
                         <div class="col-md-12 text-center">
                         	<div class="form-group">
-    							<input type="submit" id="submitButton"  name="submitButton" class="button medium reverse" value="SUBMIT">
+    							<input type="button" id="submitButton"  name="submitButton" class="button medium reverse" value="SUBMIT">
  							</div> 
                     	</div>
                     </form>
-                   
+
+                    <form id="guest-form">
+                        {% csrf_token %}
+                        <div class="col-md-12" id="guest-list">
+
+                        </div>
+                    </form>
+                    <div id="rsvp-message">
+                        <p id="message"></p>
+                    </div>
               	</div>
                 </div>
            
@@ -2088,6 +2087,39 @@
         <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
         <!-- Custom Additional Script -->
         <script type="text/javascript" src="{% static 'js/main-slider-fade.js' %}"></script>
+
+        <script>
+            $('#submitButton').click(function () {
+                let rsvpCodeField = $('#rsvp-code');
+                let rsvpLabel = $('#rsvp-code-label');
+                let rsvpCode = $('input[name=rsvpCode]').val();
+                $.ajax({
+                    type: 'post',
+                    url: "{% url 'get-household-guests' %}",
+                    data: {"csrfmiddlewaretoken": $("input[name=csrfmiddlewaretoken]").val(), "rsvpCode": rsvpCode},
+                    success: function (data) {
+                        $('#rsvpcodeform').hide();
+                        $('#guest-list').html(data);
+                    }
+                });
+            });
+
+            $('#guest-form').on('click', "#guestSubmit", function () {
+                let guests = $('input[name="guests[]"]:checked').map(function () {
+                    return this.value;
+                }).get();
+
+                $.ajax({
+                    type: 'post',
+                    url: "{% url 'rsvp' %}",
+                    data: {"csrfmiddlewaretoken": $("input[name=csrfmiddlewaretoken]").val(), "guests": guests},
+                    success: function (data) {
+                        $('#guest-form').hide();
+                        $('#message').html(data.message);
+                    }
+                });
+            });
+        </script>
         
 	</body>
 </html>

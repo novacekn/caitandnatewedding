@@ -21,4 +21,6 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
+    path('rsvp/', views.rsvp, name='rsvp'),
+    path('get-household-guests/', views.get_household_guests, name='get-household-guests'),
 ]
