@@ -1971,12 +1971,12 @@
                   <!-- FORM -->
                 <div class="row">
                 	<div id="message" class="col-md-12 message"> <!-- Show Message --> </div>
-                    <form id="rsvpcodeform">
+                    <form id="rsvpnameform">
                         {% csrf_token %}
                 		<div class="col-md-12">
-                        	<div id="rsvp-code" class="form-group">
-    							<label id="rsvp-code-label" for="rsvp-code">RSVP CODE</label>
-    							<input type="text" name="rsvpCode" class="form-control ajax-input" id="rsvp-code" placeholder="" data-required="RSVP CODE REQUIRED" autocomplete="off">
+                        	<div id="name" class="form-group">
+    							<label id="name-label" for="name">NAME</label>
+    							<input type="text" name="name" class="form-control ajax-input" id="name" placeholder="" data-required="NAME REQUIRED" autocomplete="off">
  							</div>
                     	</div>
 
@@ -2096,15 +2096,15 @@
 
         <script>
             $('#submitButton').click(function () {
-                let rsvpCodeField = $('#rsvp-code');
-                let rsvpLabel = $('#rsvp-code-label');
-                let rsvpCode = $('input[name=rsvpCode]').val();
+                let nameField = $('#name');
+                let nameLabel = $('#name-label');
+                let name = $('input[name=name]').val();
                 $.ajax({
                     type: 'post',
                     url: "{% url 'get-household-guests' %}",
-                    data: {"csrfmiddlewaretoken": $("input[name=csrfmiddlewaretoken]").val(), "rsvpCode": rsvpCode},
+                    data: {"csrfmiddlewaretoken": $("input[name=csrfmiddlewaretoken]").val(), "name": name},
                     success: function (data) {
-                        $('#rsvpcodeform').hide();
+                        $('#rsvpnameform').hide();
                         $('#guest-list').html(data);
                     }
                 });

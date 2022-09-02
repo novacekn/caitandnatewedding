@@ -19,9 +19,12 @@ def rsvp(request):
 
 
 def get_household_guests(request):
-    rsvp_code = request.POST.get('rsvpCode')
-    household = Household.objects.filter(rsvp_code=rsvp_code).first()
-    guests = Guest.objects.filter(household=household)
+    name = request.POST.get('name').lower().split(' ')
+    try:
+        guest = Guest.objects.filter(first_name__contains=name[0], last_name__contains=name[1]).first()
+    except Exception:
+        return JsonResponse('<h3>No guest found with this name.</h3>', safe=False)
+    guests = Guest.objects.filter(household=guest.household)
     i = 0
     html = '<label for="guests[]">Guests On Household (Please check all that are attending)</label>'
     for guest in guests:
