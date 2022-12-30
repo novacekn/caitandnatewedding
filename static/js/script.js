@@ -336,11 +336,12 @@ $(document).ready(function() {
 	// 07. COUNTDOWN
 	//===================================================================================
 	var theday = new Date();
-	theday = new Date(2023, 4, 15);
-	$('#countdown').countdown({until: theday, format: 'WDHMS'});
-	$('#countdown').countdown($.countdown.regionalOptions['custom-label']); 
-		 
+	theday = new Date(2023, 3, 15);
+	console.log(theday);
 	$('#date-countdown').countdown({until: theday, format: 'WDHMS'});
+	$('#date-countdown').countdown($.countdown.regionalOptions['custom-label']);
+		 
+	//$('#date-countdown').countdown({until: theday, format: 'WDHMS'});
 		 
 	// 08. MOBILE MENU
 	//==================================================================================
@@ -397,6 +398,22 @@ $(document).ready(function() {
 			var owl_events = $("#events-carousel").data('owlCarousel');
 			owl_events.stop()
 		}	
+	}
+
+		if ($("#hotels-carousel").length){
+    	$("#hotels-carousel").owlCarousel({
+			items : 2,
+			itemsDesktopSmall: [979,2],
+			autoPlay: 2000,
+			stopOnHover: true,
+			pagination: true,
+			navigation:false,
+		});
+
+		if (device.tablet() || device.mobile()) {
+			var owl_hotels = $("#hotels-carousel").data('owlCarousel');
+			owl_hotels.stop()
+		}
 	}
  	
 	// 10.3 OWL CAROUSEL - REGISTRY LOGO (ONEPAGE)
